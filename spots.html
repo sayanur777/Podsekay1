@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Места для рыбалки — Podsekay</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3f3;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #0f3b1f;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffffcc;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .page-header {
+      background: url('https://images.unsplash.com/photo-1589395595558-fc1d821d1cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .page-header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .spot-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .spot-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 360px;
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .spot-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .spot-item h3 {
+      font-size: 1.5rem;
+      color: #0f3b1f;
+      margin: 15px 20px 10px;
+    }
+
+    .spot-item p {
+      padding: 0 20px 10px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #0f3b1f;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .socials {
+      margin-top: 10px;
+    }
+
+    .socials a {
+      color: #ffd700;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🎣 Podsekay</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="gear.html">Снаряжение</a></li>
+        <li><a href="tips.html">Советы</a></li>
+        <li><a href="spots.html">Места</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Лучшие места для рыбалки</h1>
+  </section>
+
+  <main class="container">
+    <section class="spot-list">
+      <article class="spot-item">
+        <div class="spot-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/%D0%91%D0%B0%D0%BB%D1%85%D0%B0%D1%88_-_panoramio.jpg/800px-%D0%91%D0%B0%D0%BB%D1%85%D0%B0%D1%88_-_panoramio.jpg');"></div>
+        <h3>Озеро Балхаш</h3>
+        <p>Озеро Балхаш — одно из крупнейших в Казахстане. Здесь можно поймать сазана, щуку, судака и карася. Отличное место круглый год.</p>
+        <p><strong>Рыбы:</strong> Сазан, щука, судак, карась</p>
+        <p><strong>Лучшее время:</strong> Май — сентябрь</p>
+      </article>
+
+      <article class="spot-item">
+        <div class="spot-image" style="background-image: url('https://sun9-29.userapi.com/impg/zJAbBAuoladM2Iu7GEZBV26InuQDUz7tZJUDDA/7ielMwOhc6Q.jpg?size=604x421&quality=96&sign=760e0c7ed96c9b659e45341c2c6a1d48');"></div>
+        <h3>Река Иртыш</h3>
+        <p>Иртыш — одна из самых рыбных рек страны. Здесь водится сазан, судак, сом и карп. Прекрасные условия для трофейной рыбалки.</p>
+        <p><strong>Рыбы:</strong> Сом, судак, щука, карп</p>
+        <p><strong>Лучшее время:</strong> Май — октябрь</p>
+      </article>
+
+      <article class="spot-item">
+        <div class="spot-image" style="background-image: url('https://img1.advisor.travel/fs440x440px-Lake_Zaysan_12.jpg');"></div>
+        <h3>Озеро Зайсан</h3>
+        <p>Красивейшее озеро на востоке Казахстана. Подходит для ловли леща, щуки, сазана и редкого белого амура.</p>
+        <p><strong>Рыбы:</strong> Лещ, сазан, щука, карп, амур</p>
+        <p><strong>Лучшее время:</strong> Июнь — сентябрь</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Podsekay — Все права защищены</p>
+    <div class="socials">
+      <a href="#">VK</a>
+      <a href="#">YouTube</a>
+      <a href="#">Telegram</a>
+    </div>
+  </footer>
+
+</body>
+</html>

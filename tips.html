@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Советы — Podsekay</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #0f3b1f;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffffcc;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .page-header {
+      background: url('https://images.unsplash.com/photo-1614624532983-4040e3b6a5cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      color: #0f3b1f;
+    }
+
+    .intro, .advanced-tips, .gear-guide {
+      margin-bottom: 40px;
+    }
+
+    .tips-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .tip-item {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .tip-item h3 {
+      margin-bottom: 10px;
+    }
+
+    .tip-image {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #0f3b1f;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .socials a {
+      color: #ffd700;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    .socials a:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .page-header h1 {
+        font-size: 2.2rem;
+      }
+
+      .tip-image {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🎣 Podsekay</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="gear.html">Снаряжение</a></li>
+        <li><a href="tips.html">Советы</a></li>
+        <li><a href="spots.html">Места</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Полный гид по рыбалке от А до Я</h1>
+  </section>
+
+  <main class="container">
+    <section class="intro">
+      <p>Рыбалка — это не просто увлекательное занятие, но и настоящее искусство. В этом разделе мы собрали для вас лучшие советы, рекомендации и практические рекомендации, которые помогут вам стать настоящим мастером рыболовного дела.</p>
+    </section>
+
+    <section class="tips-list">
+      <article class="tip-item">
+        <h3>Как выбрать правильную удочку</h3>
+        <div class="tip-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKVhmYzsopFkf2BMq4jw6BkghTdyarUxIoIlOH9m7Lg_opHw3PR6LQeco3iPDmJo_VfinjArS3k6Xv83XsC_HCXKrtsPM7negbrqkDmjdh0zoQITwyyybHHah9GmQlS7k5dMwWnCG1ppYOAnYwjFpSz1eH7_dXZYTqEW7Awxj4FtSTzhkvUOIQ5ZeIs4k/s1280/Masha-221-Bear5.jpg');"></div>
+        <p>Выбор удочки зависит от типа рыбалки: фидер, спиннинг или маховая удочка. Важно учитывать длину, материал и комфорт в использовании.</p>
+        <ul>
+          <li><strong>Спиннинг</strong> — для ловли хищной рыбы.</li>
+          <li><strong>Фидер</strong> — для карпа, леща и другой мирной рыбы.</li>
+          <li><strong>Маховая удочка</strong> — для карася и плотвы.</li>
+        </ul>
+      </article>
+
+      <article class="tip-item">
+        <h3>Лучшие приманки для разных типов рыбы</h3>
+        <div class="tip-image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil_Sl-s2MlOULT4HeXUg3BOX8fnpU0j19XOF89elMm1Ky5QVhqJozwzILubXO7m9tarseO5bTDS26-eREvWzUN5-uu2J0YO5YiPFM8-nn3oeKHd1Woj3--HG6U6SqacqbDAnbzaU5QMLSSpRSdp2jixGWhd2jLMDIhRUOOHkpE1tsTZtfcJO3E65Oh/s1280/Masha-141-Bear-2.jpg');"></div>
+        <p>Каждая рыба предпочитает свою приманку. Узнайте, какие приманки лучше работают для каждого вида:</p>
+        <ul>
+          <li><strong>Щука</strong> — виброхвосты, блёсны.</li>
+          <li><strong>Сазан</strong> — бойлы, кукуруза.</li>
+          <li><strong>Судак</strong> — джиг-приманки, воблеры.</li>
+        </ul>
+      </article>
+
+      <article class="tip-item">
+        <h3>Рыбалка в холодное время года</h3>
+        <div class="tip-image" style="background-image: url('https://fsd.videouroki.net/html/2020/04/30/v_5eaa56bebb7b8/99751098_8.jpeg');"></div>
+        <p>Зимой рыбалка требует особого подхода: утепление, подготовка, особые снасти и осторожность.</p>
+        <ul>
+          <li>Используйте <strong>ледобур</strong> и бурильные инструменты.</li>
+          <li>Берите <strong>термос с чаем</strong> и <strong>теплые ботинки</strong

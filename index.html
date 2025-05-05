@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podsekay - Главная</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0f3b1f;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffffdd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1517838277536-dffbffdd3392?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0f3b1f;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #126d3a;
+    }
+
+    .main-content {
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+
+    .main-content h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    /* Секция отзывов */
+    .reviews {
+      background-color: #f1f1f1;
+      color: #000;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .reviews h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .review {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .review p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .review .author {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    /* Карта */
+    .map {
+      background-color: #1a1a1a;
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .map h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Футер */
+    footer {
+      background-color: #0f3b1f;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .socials a {
+      color: #ffd700;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    .socials a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🎣 Podsekay</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="gear.html">Снаряжение</a></li>
+        <li><a href="tips.html">Советы</a></li>
+        <li><a href="spots.html">Места</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Добро пожаловать в наш рыболовный мир</h1>
+      <p>Все самое качественное в магазине Podsekay</p>
+      <a href="about.html" class="btn hero-btn">Узнать больше</a>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="container">
+      <h2>Популярные товары</h2>
+      <div class="product-grid">
+        <!-- Карточки -->
+        <div class="product-card">
+          <img src="https://fishingweekend.ru/userfls/shop/large/9544_spinning-v-sbore-18m.jpg" alt="Рыболовное удилище">
+          <h3>Рыболовное удилище</h3>
+          <p>Удилище для профессионалов и новичков. Прочное и надежное.</p>
+          <a href="gear.html" class="btn">Посмотреть товар</a>
+        </div>
+        <div class="product-card">
+          <img src="https://cdn1.ozone.ru/s3/multimedia-z/6604966511.jpg" alt="Рыболовная катушка">
+          <h3>Рыболовная катушка</h3>
+          <p>Идеальная катушка для дальних забросов и комфортной рыбалки.</p>
+          <a href="gear.html" class="btn">Посмотреть товар</a>
+        </div>
+        <div class="product-card">
+          <img src="https://snast55.ru/_sh/322/32265.jpg" alt="Прикормка">
+          <h3>Прикормка</h3>
+          <p>Эффективные приманки для ловли разных видов рыбы.</p>
+          <a href="gear.html" class="btn">Посмотреть товар</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Отзывы наших клиентов</h2>
+    <div class="review">
+      <p>"Podsekay — это мой лучший выбор для рыбалки! Все товары качественные, а команда всегда готова
